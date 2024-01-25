@@ -1,0 +1,465 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  z-index: 999;
+  border-bottom: 2px solid orange;
+}
+.navbar li :focus {
+  color: orange;
+}
+li .nav-link {
+  color: white;
+  border-radius: 0 10px;
+  padding: 0.1rem 1rem;
+}
+li .nav-link:hover {
+  background-color: #fff;
+  color: #023573;
+}
+.dropdown-menu {
+  padding: 5px;
+}
+.dropdown-item {
+  color: black;
+  font-weight: 500;
+}
+.dropdown-item:hover {
+  font-weight: 600;
+  padding-left: 2rem;
+  border-radius: 0 18px;
+  color: white;
+  background-color: #131e45;
+}
+.dropdown-menu {
+  box-shadow: 0 0 5px 5px #131e45;
+}
+.about,
+.contact,
+#portfolio,
+#kegiatan {
+  padding: 5.5rem 7% 1.4rem;
+}
+
+/* Jumbotron */
+.jumbotron img {
+  margin-top: 3rem;
+  border-bottom: 2px solid #ffa500;
+}
+
+/* Carousel */
+.carousel-item img{
+padding-top: 4.2rem;
+  height: auto;
+}
+
+/* # Sections General */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  padding-bottom: 20px;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #131e45;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #151515;
+}
+
+/* Portfolio */
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(21, 21, 21, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: #07254a99;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.5s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.4s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.2);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+.MyFakultas{ 
+  text-align: center !important;
+}
+.container .btn-seemore{
+  margin: 0.5rem;
+  color: #fff;
+  background-color: #023573;
+}
+.container .btn-seemore:hover{
+  color: orange;
+background-color: #054189;
+}
+.modal-body .row .view{
+display: flex;
+}
+#myModalFilkom .modal-body img,
+#myModalFEB .modal-body img,
+#myModalFIH .modal-body img ,
+#myModalFKIP .modal-body img,
+#myModalFISIP .modal-body img,
+#myModalFK .modal-body img,
+#myModalFSanitek .modal-body img {
+  width: 100%; 
+  height: auto;
+  border-radius: 10px;
+}
+.modal-footer button {
+background-color: #023573;
+}
+.modal-footer button:hover{
+background-color: orange;
+}
+.modal-footer button a{
+  color: white;
+  text-decoration: none;
+}
+
+/*  Vr & news */
+#kegiatan h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.portfolio-info .link
+{
+  color: white;
+  text-align: center !important;
+}
+.portfolio-info .link:hover{
+  color: #ffa500;
+}
+
+
+/* contact */
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  background: #131e45;
+  color: white;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: black;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #131e45;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #131e45;
+  border: 0;
+  padding: 10px 24px;
+  color: white;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: orange;
+  color: black;
+  border: 2px solid #131e45;
+}
+
+/* footer */
+footer {
+  border-top: 2px solid orange;
+  background-color: #131e45;
+  padding: 40px 0;
+}
+.single-box img {
+  width: 150px;
+}
+.single-box p {
+  color: #fff;
+  text-align: justify;
+  line-height: 1.9;
+}
+.single-box h2 {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+.single-box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.single-box ul {
+  list-style: none;
+  padding: 0;
+}
+.single-box ul li a {
+  margin-left: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  line-height: 2.5;
+}
+.social-media ul li {
+  display: inline;
+}
+.social-media ul li a {
+  margin: auto;
+}
+.credit {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+}
+hr {
+  color: orange;
+}
+
+@media (max-width: 1000px) {
+  html{
+    font-size: 95%;
+  }
+  body {
+    font-size: 1rem;
+  }
+  #sub {
+    font-size: 1.8rem;
+  }
+  .single-box {
+    text-align: center;
+  }
+  .single-box ul li a {
+    margin-left: 0;
+  }
+  .kontak {
+    width: 50vw;
+    margin: auto;
+  }
+  .info .address h4,
+  .info .address p,
+  .info .email h4,
+  .info .email p,
+  .info .phone h4,
+  .info .phone,
+  i {
+    font-size: 95%;
+  }
+}
+@media (max-width: 768px) {
+  html{
+    font-size: 89%;
+  }
+  .single-box,
+  footer > h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+  #myModalFilkom .modal-body img,
+  #myModalFEB .modal-body img,
+  #myModalFIH .modal-body img ,
+  #myModalFKIP .modal-body img,
+  #myModalFISIP .modal-body img,
+  #myModalFK .modal-body img,
+  #myModalFSanitek .modal-body img {
+    max-width: 33%; 
+    height: auto;    
+}
+  #kegiatan #sub {
+    font-size: 1.2rem;
+  }
+  .info .address h4,
+  .info .address p,
+  .info .email h4,
+  .info .email p,
+  .info .phone h4,
+  .info .phone,
+  i {
+    font-size: 88%;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-brand span {
+    /* display: none; */
+    font-size: 1.3rem!important;
+  }
+  .single-box {
+    margin-left: 0%;
+  }
+  .modal-body .row .view{
+    display: inline;
+  }
+  #myModalFilkom .modal-body img,
+  #myModalFEB .modal-body img,
+  #myModalFIH .modal-body img ,
+  #myModalFKIP .modal-body img,
+  #myModalFISIP .modal-body img,
+  #myModalFK .modal-body img,
+  #myModalFSanitek .modal-body img { 
+    max-width:40%; 
+    margin-bottom: 5px;
+    height: auto;    
+    border-radius: 10px;
+  }
+  #sub {
+    font-size: 1.2rem;
+  }
+  .info .address h4,
+  .info .address p,
+  .info .email h4,
+  .info .email p,
+  .info .phone h4,
+  .info .phone,
+  i {
+    font-size: 80%;
+  }
+  .info .phone h4 {
+    font-size: 0.8rem;
+  }
+}
+/* extra Small */
+@media (max-width: 376px) {
+  .carousel-item img{
+    padding-top: 6.9rem;
+    }
+}
